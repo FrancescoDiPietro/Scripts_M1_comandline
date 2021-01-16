@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ $# -ne 1 ] 
+then
+	echo "no arguments inserted"
+fi
+
+name=$(basename $1)
+
+curl $1 > $name
+
+exit 0
