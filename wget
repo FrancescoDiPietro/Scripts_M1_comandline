@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #This script takes the function of wget 
-#as parameters set the link you would like to download the file from and an optional name you want to give it otherwise it will take the original name
+#As parameters set the link you would like to download the file from, and an optional name for it otherwise it will take the original name saved in the link
 #Example: user$ wget myLink.com/myDocument.pdf [Dcoument.pdf]
 #if Document.pdf is added it will be saved as such otherwise as myDocument.pdf as in the link
 
