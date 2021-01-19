@@ -1,11 +1,19 @@
 #!/bin/bash
 
-if [ $# -ne 1 ] 
+if [[ $# -ne 1 && $# -ne 2 ]]
 then
 	echo "no arguments inserted"
+	exit -1
 fi
 
-name=$(basename $1)
+if [ $# -eq 1 ]
+then
+	name=$(basename $1)
+
+else
+	name=$2
+fi
+
 
 curl $1 > $name
 
